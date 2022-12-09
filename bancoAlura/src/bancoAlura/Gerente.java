@@ -1,6 +1,10 @@
 package bancoAlura;
 
 public class Gerente extends Funcionario {
+	
+	public Gerente(int conta, int agencia) {
+		super(conta,agencia);
+	}
 
 	private int senha;
 

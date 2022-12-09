@@ -1,12 +1,28 @@
 package bancoAlura;
 
-public class Funcionario {
+public abstract class Funcionario {
 	private double saldo;
 	private int conta;
+	private int agencia;
 	private Cadastro titular;
+	
+	//Construtor
+	public Funcionario(int conta,int agencia) {
+		this.conta = conta;
+		this.agencia = agencia;
+		System.out.println("Numero da conta colocado.");
+	}
+	
+	//#########################
+	public int getAgencia() {
+		return agencia;
+	}
 
 	public double getSaldo() {
 		return saldo;
+	}
+	public Funcionario() {
+		
 	}
 
 	
